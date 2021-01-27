@@ -27,6 +27,11 @@ body {
 #qrCode {
     margin: 15px;
 }
+
+.line {
+    border: 2px solid black;
+    border-radius: 5px;
+}
 .product {
     width: 85% !important;
     height: 85% !important;
