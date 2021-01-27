@@ -1,8 +1,8 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Vending Machine";
 }
   
-    <div class="container text-center col-md-offset-1 ">
+    <div class="container-fluid text-center col-md-offset-1 ">
         <div class="row">
             <div class="col-md-8  " id="products_container">
 
@@ -24,7 +24,36 @@
             </div>
 
         </div>
-       
+
+
+        <div class="row">
+            <div class="col-md-8  " id="products_container">
+                <hr class="line" />
+                <div class="col-sm-2 col-md-offset-1 ">
+
+                    <h3>Dispatched Products </h3>
+
+                    <table class="table table-responsive" id="dispatched_products">
+                    </table>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-sm-2 col-md-offset-1 ">
+                <h3> Preparing </h3>
+                <table class="table table-responsive" id="pro_list">
+                </table>
+                <h2 id="counter" class="Single text-white"></h2> <h2 id="seconds" class="text-white"> </h2>
+                <hr class="line" />
+                <table class="table table-responsive" id="preparation">
+                </table>
+
+            </div>
+
+        </div>
+
     </div>
 
 
