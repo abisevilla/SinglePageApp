@@ -42,14 +42,15 @@
 
     <partial name="_CookieConsentPartial" />
 
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2021 - VendingMachine</p>
-        </footer>
-    </div>
+    @RenderBody()
+    @*<div class="container body-content">
 
+
+            <footer>
+                <p>&copy; 2021 - VendingMachine</p>
+            </footer>
+        </div>*@
+    <script src="~/js/site.js"></script>
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
         <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
@@ -72,5 +73,9 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+
+    <script>
+        Init();
+    </script>
 </body>
 </html>
